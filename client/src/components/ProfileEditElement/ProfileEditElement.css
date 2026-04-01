@@ -1,0 +1,92 @@
+
+
+.profileEditElement .edit-options{
+    margin: 5%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.profileEditElement .edit-options select{
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: var(--primary-color);
+    justify-self: baseline;
+    color: var(--secondary-color);
+}
+
+
+.profileEditElement .edit-options div{
+    display: flex;
+    flex-direction: column;
+}
+
+.profileEditElement .edit-options div input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--secondary-color);
+    width: 100%;
+    padding: 5px 0px;
+    background-color: var(--primary-color);
+}
+
+
+
+@media (max-width:768px) {
+    
+
+    .profileEditElement {
+        margin-bottom: 10%;
+    }
+    .profileEditElement .edit-options{
+        margin: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items:start;
+        gap: 30px;
+    }
+
+
+.profileEditElement .edit-options label{
+    font-size: 14px;
+}
+
+.profileEditElement .edit-options select{
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+
+.profileEditElement .edit-options div input{
+    font-size: 14px;
+    width: 120%;
+    padding: 5px 0px;
+}
+}
+
+
+
+@media (max-width:480px) {
+    
+    .profileEditElement .edit-options{
+        margin: 1.5%;
+    }
+
+    .profileEditElement .edit-options label{
+        font-size: 12px;
+    }
+    
+    .profileEditElement .edit-options select{
+        padding: 5px 10px;
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    
+    
+    .profileEditElement .edit-options div input{
+        font-size: 12px;
+        width: 120%;
+        padding: 5px 0px;
+    }
+    }

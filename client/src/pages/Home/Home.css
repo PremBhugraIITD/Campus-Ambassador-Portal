@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-color: white;
+  --secondary-color: #171517;
+}
+
+.home-footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  position: absolute;
+  width: 100vw;
+  margin-top: 400vh;
+  right: 0.01vw;
+} 
+
+@media (max-width: 768px){
+    .home-footer{
+        margin-top: 575vh;
+    }
+}

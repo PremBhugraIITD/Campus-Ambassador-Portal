@@ -1,0 +1,107 @@
+/* :root{
+    --primary-color: white; 
+    --secondary-color: #171517;
+  } */
+
+
+.outer-query-container{
+    margin:0 10%;
+    margin-top: 3%;
+
+}
+.inner-query-container{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 10%;
+}
+
+
+.faq-container-items li{
+    list-style: none;
+}
+/* .outer-query-container div{
+    display: flex;
+    justify-content: space-between;
+} */
+.outer-query-container .faq-list-container{
+    width: 100%;
+    margin-right: auto;
+    left: 0%;
+}
+
+.outer-query-container .faq-list-container h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.outer-query-container .main-faq-container h1{
+    text-align: left;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.outer-query-container .new-faq-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq-container-items{
+    margin: 2% 0%;
+    padding: 10px;
+    margin-top: 10%;
+    max-height: 300px;
+    width: 100%;
+    overflow-y: scroll;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-faq-container input{
+    margin-top: 15%;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 5px;
+}
+
+.new-faq-container textarea{
+    outline: none;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 5px;
+    resize: none;
+}
+
+
+.new-faq-container  .query-send button{
+    outline: none;
+    border: none;
+    width:fit-content;
+    padding: 5px 5px;
+    background: none;
+}
+.new-faq-container .query-send{
+    padding: 0 10px;
+    width: fit-content;
+    background-color: rgb(225, 225, 225);
+    border-radius: 20px;
+    margin-left: auto;
+    right: 0;
+}
+.new-faq-container .query-send img{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}

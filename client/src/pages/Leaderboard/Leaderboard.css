@@ -1,0 +1,83 @@
+/* Outer container */
+.outer-leaderboard-container {
+    margin: 0 10%;
+    margin-top: 3%;
+}
+
+/* Leaderboard title */
+.outer-leaderboard-container h1 {
+    text-align: left;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+/* Ranking container */
+.outer-leaderboard-container .all-ranking {
+    margin: 2% 0%;
+    max-height: 450px;
+    width: 100%;
+    overflow-y: scroll;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+}
+
+/* User rank styling */
+.all-ranking .my-rank {
+    padding: 0%;
+    transform: scale(108%);
+}
+
+/* Responsive adjustments */
+
+/* For tablets */
+@media (max-width: 768px) {
+    .outer-leaderboard-container {
+        margin: 0 10%;
+        margin-top: 2%;
+    }
+
+    .outer-leaderboard-container h1 {
+        font-size: 30px; 
+    }
+
+    .outer-leaderboard-container .all-ranking {
+        margin: 5% 0%;
+        padding: 0 3%;
+        max-height: 500px;
+        margin-bottom: 10%;
+        overflow-x: hidden;
+
+    }
+
+    .all-ranking .my-rank {
+        padding: 2px 0px;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .outer-leaderboard-container {
+        margin: 0 5%;
+        margin-top: 1%;
+    }
+
+    .outer-leaderboard-container h1 {
+        font-size: 26px; 
+    }
+
+    .outer-leaderboard-container .all-ranking {
+        margin: 8% 0%;
+        padding: 0 2%;
+        max-height: 530px;
+        margin-bottom: 10%;
+        overflow-x: hidden;
+    }
+
+    .all-ranking .my-rank {
+        .all-ranking .my-rank {
+            padding: 5px 0px;
+        }
+    }
+}

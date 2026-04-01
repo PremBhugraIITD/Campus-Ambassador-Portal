@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.home-container {
+  position: absolute;
+  width: 100vw;
+  height: 90vh;
+  right: 0.01vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.up-home {
+  height: 40%;
+  width: 100%;
+  background-color: var(--secondary-color);
+  /* background-color: orange; */
+}
+
+.logo {
+  position: absolute;
+  width: 45vw;
+  height: 25vh;
+  left: 53vw;
+  top: 9vh;
+  z-index: 1000;
+}
+
+.down-home {
+  height: 60%;
+  width: 100%;
+  background-color: var(--primary-color);
+  /* background-color: pink; */
+}
+
+.down-home .content {
+  color: var(--secondary-color);
+  width: 30% ;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+  margin-left: 60%;
+  margin-top: 9%;
+}
+
+.content h1 {
+  z-index: 100;
+  font-family: "Sansita", sans-serif;
+  font-size: 1.7em;
+  font-weight: 300;
+  text-align: center;
+  width: 80%;
+  margin-bottom: 4%;
+}
+
+.content p {
+  width: 150%;
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: 500;
+  margin-bottom: 3%;
+}
+
+.content button {
+  cursor: pointer;
+  background-color: var(--submit-color);
+  color: var(--secondary-color);
+  padding: 4% 6%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+
+.guitar {
+  position: absolute;
+  width: 95vw;
+  height: 80vh;
+  left: 5vw;
+  margin-top: 0.5vh;
+}
+
+@media (max-width: 768px) {
+    .home-container{
+        position: absolute;
+        height: 85vh;
+        margin-top: -50vh;
+    }
+
+    .up-home{
+        height: 20%;
+    }
+
+    .guitar{
+        height: 25vh;
+        left:2vh;
+        margin-top: 4vh;
+    }
+
+    .logo{
+        width: 57vw;
+        top:-7vh;
+        left:40vw;
+    }
+
+    .down-home{
+        height: 80%;
+    }
+
+    .down-home .content{
+        width:88%;
+        padding: 0;
+        margin:0;
+        margin-left:6%;
+        margin-top: 29%;
+    }
+
+    .content h1{
+        margin-bottom:3%;
+    }
+
+    .content p{
+        width:90%;
+        margin-bottom: 3%;
+    }
+
+    .content button{
+        padding: 3% 5%;
+        margin-bottom: 9%;
+    }
+}
+
+@media (max-width:480px) {
+  .guitar {
+    height: 20vh;
+    left:2vh;
+    margin-top: 7vh;
+  }
+
+  .logo{
+    width: 47vw;
+    top:-1vh;
+    left:50vw;
+}
+}

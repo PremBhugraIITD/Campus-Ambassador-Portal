@@ -1,0 +1,327 @@
+/* :root{
+    --primary-color: white; 
+    --secondary-color: #171517;
+  } */
+
+
+.outer-profile-container{
+    margin-right:10%;
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 1.3fr 2.7fr;
+}
+
+.first-profile-container{
+    width: 100%;
+    border-right: 2px solid var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:50px;
+}
+
+/* IMPOETANT */
+.first-profile-container .first-display{
+    display: none;
+}
+
+.second-profile-container .second-display{
+    display: none;
+}
+
+.inner-profile-container{
+    position: relative;
+}
+
+
+
+
+.inner-profile-container .profile-image img{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    border-radius: 100%;
+}
+
+.inner-profile-container .profile-edit{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    bottom: 0;
+    right: 0%;
+}
+
+.first-profile-container .profile-options p{
+    color: rgb(205, 203, 203);
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+
+.first-profile-container .profile-options .active{
+    color: var(--secondary-color);
+    /* font-weight: 600; */
+
+}
+
+.first-profile-container .profile-edit img{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    cursor: pointer;
+    padding-left: 8px;
+    padding-top: 8px;
+
+}
+
+.second-profile-container{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+.second-inner-profile{
+    display: flex;
+    flex-direction: column;
+}
+
+.second-inner-profile div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.second-inner-profile div p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+
+@media (max-width:768px) {
+    
+/* IMPOETANT */
+
+    .outer-profile-container{
+        margin: 0 10%;
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .first-profile-container{
+        border-right:none;
+        display: flex;
+        flex-direction: row;
+        align-items:start;
+        justify-content: space-between;
+    }
+
+
+
+    .first-profile-container .first-display{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+
+    .first-profile-container .first-display h1{
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    
+    
+    .first-profile-container .first-display div p{
+        font-size: 20px;
+    }
+
+    .first-profile-container .first-display .profile-mail{
+        width: 20px;
+        height: 20x;
+        margin: 0 5px;
+    }
+
+    .first-profile-container .first-display .profile-phone{
+        width: 20px;
+        height: 20x;
+        margin: 0 5px;
+    }
+
+    /* .first-inner-profile .first-display .text-one{
+        padding-bottom: 30px;
+    } */
+    .second-profile-container{
+        margin-top: 20%;
+    }
+
+    .second-profile-container .second-display{
+        display: flex;
+        padding: 0 20px;
+        justify-content:space-between;
+        border-bottom: 1px solid var(--secondary-color);
+    }
+
+    .second-profile-container .second-display p{
+
+        color: rgb(205, 203, 203);
+        cursor: pointer;
+        padding: 5px 0;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .second-profile-container .second-display .active{
+        color: var(--secondary-color);
+        border-bottom: 1px solid var(--secondary-color);
+    }
+
+
+
+    .first-profile-container .profile-options{
+        display: none;
+    }
+
+    .second-profile-container .second-inner-profile{
+        display: none;
+    }
+
+
+
+    .inner-profile-container .profile-image img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .inner-profile-container .profile-edit{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+    }
+
+    .first-profile-container .profile-edit img{
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        cursor: pointer;
+        padding-left: 8px;
+        padding-top: 8px;
+
+    }
+
+}
+
+
+@media (max-width:460px) {
+    
+    /* IMPOETANT */
+    
+        .outer-profile-container{
+            margin: 0 5%;
+            margin-top: 1%;
+            display: flex;
+            flex-direction: column;
+        }
+    
+    
+        .first-profile-container{
+            border-right:none;
+            display: flex;
+            flex-direction: row;
+            align-items:start;
+            justify-content: space-between;
+        }
+    
+    
+    
+        .first-profile-container .first-display{
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+        }
+    
+        .first-profile-container .first-display h1{
+            font-size: 26px;
+            margin-bottom: 6px;
+        }
+        
+        
+        .first-profile-container .first-display div p{
+            font-size: 16px;
+        }
+    
+       
+        /* .first-inner-profile .first-display .text-one{
+            padding-bottom: 30px;
+        } */
+
+        .second-profile-container{
+            margin-top: 20%;
+        }
+    
+        .second-profile-container .second-display{
+            display: flex;
+            padding: 0 10px;
+            justify-content:space-between;
+            border-bottom: 1px solid var(--secondary-color);
+        }
+    
+        .second-profile-container .second-display p{
+    
+            color: rgb(205, 203, 203);
+            cursor: pointer;
+            padding: 5px 0;
+        }
+    
+        .second-profile-container .second-display .active{
+            color: var(--secondary-color);
+            border-bottom: 1px solid var(--secondary-color);
+        }
+    
+    
+    
+        .first-profile-container .profile-options{
+            display: none;
+        }
+    
+        .second-profile-container .second-inner-profile{
+            display: none;
+        }
+    
+
+        .inner-profile-container .profile-image img{
+            width: 80px;
+            height: 80px;
+        }
+    
+        .inner-profile-container .profile-edit{
+            position: absolute;
+            width: 25px;
+            height: 25px;
+        }
+    
+        .first-profile-container .profile-edit img{
+            width: 30px;
+            height: 30px;
+            padding: 5px;
+            cursor: pointer;
+            padding-left: 8px;
+            padding-top: 8px;
+    
+        }
+    
+    }

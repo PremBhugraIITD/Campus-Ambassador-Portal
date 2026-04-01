@@ -1,0 +1,241 @@
+footer {
+        width: 100%;
+        /* padding: 20px; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-top: 1px solid var(--secondary-color);
+        margin-top: 5%;
+        padding: 20px 0;
+    }
+
+    .mobile-only-social-icons{
+        display: none;
+    }
+    
+    footer p {
+        margin: 0;
+    }
+    
+    .footer-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .footer-links a {
+        text-decoration: none;
+        color: #f0c46c;
+        margin: 0 10px;
+    }
+
+footer .footer-content ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    list-style: none;
+}
+
+
+footer .footer-content ul li{
+    margin: 10px;
+}
+
+footer .footer-content ul li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+
+footer .footer-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+footer .footer-image .footer-main-logo img{
+    width: 250px;
+}
+footer .footer-image .social-icons ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+}
+
+footer .footer-image .social-icons ul img{
+    width: 30px;
+    height: 30px;
+}
+
+.mobile-only-social-icons ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+}
+
+.mobile-only-social-icons ul img{
+    width: 30px;
+    height: 30px;
+}
+
+footer .footer-image  p{
+    font-size: 12px;
+}
+
+footer .footer-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-contact img{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+footer .footer-contact p {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-contact p a{
+    color:var(--secondary-color);
+    text-decoration: none;
+
+}
+
+footer .footer-contact p img{
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        /* display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr; */
+    }
+
+    .footer-contact{
+        order: -1;
+    }
+
+    .footer-image .social-icons{
+        display: none;
+    }
+
+    .mobile-only-social-icons{
+        display: inline;
+        order: -2;
+    }
+
+
+
+
+}
+
+@media (max-width: 576px) {
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        /* display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr; */
+    }
+
+
+    footer .footer-image .footer-main-logo img {
+        width: 200px; 
+    }
+
+
+    .footer-contact{
+        order: -1;
+    }
+
+    .footer-image .social-icons{
+        display: none;
+    }
+
+    .mobile-only-social-icons{
+        display: inline;
+        order: -2;
+    }
+
+    .mobile-only-social-icons ul img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .mobile-only-social-icons ul {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 356px) {
+    
+    footer{
+        font-size: 0.8rem;
+        padding:5px
+    }
+
+    .footer-contact{
+        order: -1;
+    }
+
+    .footer-image .social-icons{
+        display: none;
+    }
+
+    .mobile-only-social-icons{
+        display: inline;
+        order: -2;
+    }
+
+    .mobile-only-social-icons ul img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .mobile-only-social-icons ul {
+        gap: 10px;
+    }
+
+    footer .footer-image .footer-main-logo img {
+        width: 120px; 
+    }
+
+    footer .footer-image .social-icons ul img {
+        width: 20px;
+        height: 20px;
+    }
+
+    footer .footer-image .social-icons ul {
+        gap: 10px;
+    }
+
+    footer .footer-contact p img{
+        width: 10px;
+        height: 10px;
+    }
+}
+
+

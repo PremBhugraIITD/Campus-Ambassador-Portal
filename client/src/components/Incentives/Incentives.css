@@ -1,0 +1,111 @@
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.incentives-container {
+  background-color: var(--primary-color);
+  /* background-color: green; */
+  color: var(--secondary-color);
+  position: absolute;
+  width: 100vw;
+  height: 60vh;
+  margin-top: 209vh;
+  right: 0.01vw;
+  /* margin-left: -6.55%; */
+  /* padding-top: 2%; */
+  display: flex;
+  align-items: center;
+}
+
+.incentives-images {
+  height: 100%;
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  margin-left: -1%;
+}
+
+.incentives-images .image-instance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 6% 0;
+  width: 20%;
+}
+
+.incentives-images .image-instance svg {
+  margin-bottom: 20%;
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.incentives-images .image-instance p {
+  text-align: center;
+  width: 73%;
+  font-size: 1em;
+}
+
+.incentives-title {
+  height: 100%;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.incentives-title h1 {
+  font-family: "Sansita", sans-serif;
+  font-size: 2em;
+  transform: rotate(-90deg);
+  margin-left: 9%;
+}
+
+
+@media (max-width: 768px) {
+    .incentives-container {
+        margin-top: 225.5vh;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .incentives-title {
+        width: 60%;
+        height: 17%;
+    }
+
+    .incentives-title h1 {
+        transform: rotate(0deg);
+        margin: 0;
+    }
+
+    .incentives-images {
+        width: 60%;
+        height: 80%;
+        margin: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .incentives-images .image-instance {
+        margin: 0;
+        margin-top: -4%;
+    }
+
+    .incentives-images .image-instance svg {
+        margin:0;
+        width: 60px !important;
+        height: 60px !important;
+        margin-bottom: 20%;
+    }
+
+    .incentives-images .image-instance p {
+        width: 170%;
+        font-size: 0.7em;
+        text-align: center;
+    }
+}

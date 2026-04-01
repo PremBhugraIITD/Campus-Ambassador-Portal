@@ -1,0 +1,45 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id            String   @id @default(dbgenerated())
+  ca_id         String
+  email         String   @unique
+  name          String
+  mobile_number String
+  instagram     String   @default("")
+  linkedin      String   @default("")
+  college_name  String
+  college_city  String
+
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  userTasks     UserTask[]
+}
+
+model UserTask {
+  user_id    String   @id
+  user    User   @relation(fields: [user_id], references: [id])
+  tasks   Json 
+  user_credit Int @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Task {
+  task_id     String   @id @default(uuid()) 
+  description String   
+  deadline    DateTime 
+  points      Int @default(0) 
+  type        String?
+  link        String?
+  multiple_submission Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

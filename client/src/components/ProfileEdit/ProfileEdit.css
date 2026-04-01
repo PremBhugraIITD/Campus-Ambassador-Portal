@@ -1,0 +1,41 @@
+.profileEdit-container{
+    margin-top: 10%;
+}
+
+.profileEdit-container .add-button{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.profileEdit-container .add-button P{
+    cursor: pointer;
+}
+
+
+@media (max-width:768px) {
+   
+    .profileEdit-container .edit-request{
+        gap: 60px;
+    }
+    .profileEdit-container p{
+        font-size: 16px;
+        margin-bottom: 5%;
+
+    }
+    .profileEdit-container .add-button p{  
+        font-size: 30px;
+    }   
+}
+
+
+@media (max-width:480px) {
+    .profileEdit-container p{
+        font-size: 14px;
+        margin-bottom: 5%;
+    }
+    .profileEdit-container .add-button p{  
+        font-size: 30px;
+    }
+}

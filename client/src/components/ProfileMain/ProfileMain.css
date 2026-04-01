@@ -1,0 +1,110 @@
+
+.profilemain-container .second-inner-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10%;
+    gap:20%;
+    /* margin-bottom: 15%; */
+}
+
+.profilemain-container .second-inner-details ul{
+    list-style: none;
+}
+.profilemain-container .second-inner-details ul li span{
+    font-weight: 300;
+}
+
+
+.profilemain-container .second-inner-details div ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.profilemain-container .second-inner-details div ul li{
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+
+    /* justify-content: space-between; */
+}
+
+.profilemain-container .second-inner-details div ul li p{
+    text-align: left;
+}
+
+
+.profilemain-container .second-inner-details div ul li .download{
+    color: var(--primary-color);
+    font-weight: 300;
+    background-color: rgb(205, 203, 203);
+    padding: 5px 5px;
+    width: 128%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+@media (max-width:768px) {
+
+    .profilemain-container .second-inner-details{
+        display:block;
+        margin-top: 10%;
+        padding: 0 20px;
+    }
+
+    .profilemain-container .second-inner-details div{
+        margin-top: 30px;
+    }
+    
+    .profilemain-container .second-inner-details div ul{
+        gap: 30px;
+    }
+    
+    .profilemain-container .second-inner-details div ul li .download{
+        padding: 5px 5px;
+        font-size: 14px;
+        width: 80%;
+        border-radius: 6px;
+        gap: 10px;
+    }
+
+    .profilemain-container .second-inner-details div ul li .download img{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+@media (max-width:480px) {
+    
+    /* .profilemain-container .second-inner-details{
+        display:block;
+        margin-top: 10%;
+        padding: 0 20px;
+    } */
+
+    .profilemain-container .second-inner-details div{
+        margin-top: 20px;
+    }
+    
+    .profilemain-container .second-inner-details div ul{
+        gap: 20px;
+    }
+      
+    .profilemain-container .second-inner-details div ul li .download{
+        padding: 3px 3px;
+        font-size: 12px;
+        width: 100%;
+        border-radius: 4px;
+        gap: 10px;
+    }
+
+    .profilemain-container .second-inner-details div ul li .download img{
+        width: 15px;
+        height: 15px;
+    }
+}

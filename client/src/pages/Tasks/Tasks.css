@@ -1,0 +1,242 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* 
+:root{
+    --primary-color: white; 
+    --secondary-color: #171517;
+  } */
+
+
+.outer-taskPage-container{
+    margin: 0 10%;
+    margin-top: 3%;
+
+}
+
+.inner-taskPage-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter";
+}
+.inner-taskPage-container h1{
+    margin-bottom: 50px;
+    text-align: left;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+
+.taskPage-user-container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+.taskPage-user-details{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.taskPage-user-details img{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 100%;
+}
+
+.taskPage-user-container>img{
+    display: none;
+}
+
+.user-task-points{
+    text-align: right;
+}
+.text-container{
+    width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.user-task-points span{
+    font-weight:normal;
+    color: var(--submit-color);
+}
+
+.taskPage-title-container ul{
+    padding: 10px 20px;
+    list-style: none;
+    display: grid;
+    font-weight: bold;
+    grid-template-columns: repeat(6,1fr);
+}
+.taskPage-title-container ul li{
+    place-self: center;
+    margin: 0 15px;
+    margin-left: 10px;
+}
+
+.taskPage-title-container>ul:nth-child(2){
+    display: none;
+}
+
+
+.task-list{
+    font-family: "Poppins";
+    overflow-y: scroll;
+    padding-top: 20px;
+    max-height: 400px;
+    
+    
+}
+
+
+@media (max-width: 768px) {
+
+    .outer-taskPage-container{
+        margin: 0 10%;
+        margin-top: 2%;
+    
+    }
+
+    .inner-taskPage-container h1{
+       font-size: 30px;
+    }
+
+    .taskPage-user-details > div > p:nth-child(2) {
+        display: none;
+      }
+
+      .taskPage-user-details> img {
+        display:none;
+      }
+
+      .taskPage-user-container{
+        flex-direction: column; 
+      }
+
+      .taskPage-user-container>img{
+        display: block;
+        width: 80px;
+        height: 80px;
+        padding: 15px;
+        background-color: var(--secondary-color);
+        border: 1px solid var(--secondary-color);
+        border-radius: 100%;
+    }
+
+    .taskPage-user-container{
+        flex-direction:row;
+        font-size: 18px;
+
+    }
+    .user-task-points{
+        text-align: left;
+    }
+
+    .text-container{
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .taskPage-title-container>ul:first-child{
+        display: none;
+    }
+
+    .taskPage-title-container ul li{
+        place-self: center;
+        margin: 0 10px;
+        margin-left: 0px;
+    }
+    
+    .taskPage-title-container>ul:nth-child(2){
+        padding: 5px 10px;
+        list-style: none;
+        display: grid;
+        font-weight: bold;
+        grid-template-columns: repeat(6,1fr);
+        font-size: 14px;
+    }
+          
+}
+
+
+@media (max-width: 480px) {
+
+    .outer-taskPage-container{
+        margin: 0 5%;
+        margin-top: 1%;
+    
+    }
+
+    .inner-taskPage-container h1{
+        font-size: 26px;
+     }
+
+    .taskPage-user-details > div > p:nth-child(2) {
+        display: none;
+      }
+
+      .taskPage-user-details> img {
+        display:none;
+      }
+
+      .taskPage-user-container{
+        flex-direction:row;
+        font-size: 18px;
+
+    }
+
+      .taskPage-user-container>img{
+        display: block;
+        width: 80px;
+        height: 80px;
+        padding: 15px;
+        background-color: var(--secondary-color);
+        border: 1px solid var(--secondary-color);
+        border-radius: 100%;
+    }
+
+    .taskPage-user-container{
+        flex-direction:row;
+    }
+    .user-task-points{
+        text-align: left;
+    }
+
+    .text-container{
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .taskPage-title-container>ul:first-child{
+        display: none;
+    }
+
+    .taskPage-title-container ul li{
+        place-self: center;
+        margin: 0 5px;
+        margin-left: 0px;
+    }
+    
+    .taskPage-title-container>ul:nth-child(2){
+        padding: 5px 0px;
+        list-style: none;
+        display: grid;
+        font-weight: bold;
+        grid-template-columns: repeat(6,1fr);
+        font-size: 12px;
+
+    }
+          
+}

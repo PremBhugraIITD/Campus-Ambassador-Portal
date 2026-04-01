@@ -1,0 +1,17 @@
+.outer-entry-container{
+    margin: 15% 5%;
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    .outer-entry-container{
+        margin: 25% 5%;
+    }
+}
+
+
+@media (max-width:480px) {
+    .outer-entry-container{
+        margin: 35% 5%;
+    }
+}

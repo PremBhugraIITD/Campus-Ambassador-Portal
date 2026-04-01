@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+.outer-header-container{
+    display: flex;
+}
+
+/* :root{
+    --primary-color: white; 
+    --secondary-color: #171517;
+} */
+
+.headerAuth{
+    background:transparent;
+    display: grid;
+    grid-template-columns: 1fr 1fr 14fr;
+    /* padding-top: 15px; */
+    align-items: center;
+    font-family: 'Sansita';
+    font-size: 20px;
+    width: 100%;
+}
+
+.headerAuth li {
+    list-style: none;
+    right: 0;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerAuth .rdv_circle_logo{
+    background-color: var(--secondary-color);
+    margin-right: auto;
+    width: 100px;
+}
+
+
+.headerAuth .rdv_circle_logo img{
+    width: 60px;
+    height: 60px;
+}
+
+
+.headerAuth li .profile{
+    width: 100px;
+    margin-left:auto;
+    
+}
+
+.headerAuth li .profile img{
+    background-color: var(--secondary-color);
+    visibility: visible;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 100%;
+}
+
+.headerAuth li .profileActive img{
+    background-color: #76515A;
+}
+
+
+@media (max-width:768px) {
+    .headerAuth .rdv_circle_logo{
+       display: none;
+    }
+
+    .headerAuth li h2{
+        display: none;
+    }
+
+    .headerAuth li .profile{
+        padding: 10px;
+    }
+    .headerAuth li .profile img{
+        display: none;
+    }
+}

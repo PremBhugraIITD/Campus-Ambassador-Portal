@@ -1,0 +1,234 @@
+/* :root{
+    --primary-color: white; 
+    --secondary-color: #171517;
+  } */
+
+
+.outer-task-container{
+    font-size: 14px; 
+}
+
+
+.outer-task-container .open-desc{
+    /* font-family: "Poppins"; */
+    max-width: 80%;
+    max-height: 500px; 
+    padding: 15px 20px;
+    margin-left: 5%;
+    padding-right: 5%;
+}
+
+.outer-task-container .close-desc{
+    max-width: 80%;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0px 20px;
+    transition: max-height 0.1s ease-out, padding 0.1s ease-out;
+    margin-left: 5%;
+    padding-right: 5%;
+}
+
+.inner-task-container{
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    padding: 10px 20px;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+
+.inner-task-container div{
+    place-self: center;
+
+}
+.inner-task-container .task-description {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.inner-task-container .task-description p:nth-child(1){
+    display: block;
+}
+
+.inner-task-container .task-description p:nth-child(2){
+    display: none;
+}
+
+.inner-task-container .task-description p {
+    margin: 0;
+    line-height: 1;
+}
+
+.inner-task-container .task-description img {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.inner-task-container .task-files{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+
+.inner-task-container .task-files p {
+    margin: 0;
+    line-height: 1;
+}
+
+.inner-task-container .task-files img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+}
+
+.inner-task-container .task-submit button{
+    border: none;
+    outline: none;
+    color:var(--submit-color);
+    font-weight:bold;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
+
+@media (max-width:768px){
+
+  .task-files>p{
+    display: none;
+  }
+  .inner-task-container>div:first-child>span{
+    display:none;
+  }
+
+  .inner-task-container .task-description p:nth-child(1){
+    display: none;
+}
+
+  .inner-task-container .task-description p:nth-child(2){
+    display: block;
+}
+  .outer-task-container{
+    font-size: 12px; 
+}
+
+
+.outer-task-container .open-desc{
+    /* font-family: "Poppins"; */
+    max-width: 80%;
+    max-height: 350px; 
+    padding: 8px 15px;
+}
+
+.outer-task-container .close-desc{
+    max-width: 80%;
+    padding: 0px 15px;
+}
+
+.inner-task-container{
+    padding: 5px 10px;
+}
+
+
+.inner-task-container .task-description img {
+    width: 13px;
+    height: 13px;
+}
+
+
+.inner-task-container .task-files img{
+    width: 15px;
+    height: px;
+
+}
+
+.inner-task-container .task-submit button{
+    border: none;
+    outline: none;
+    color:var(--submit-color);
+    font-weight:bold;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
+.inner-task-container .task-share img{
+    width: 15px;
+    height: 15px;
+}
+
+}
+
+
+@media (max-width:480px){
+
+    .task-files>p{
+        display: none;
+    }
+    .inner-task-container>div:first-child>span{
+        display:none;
+    }
+
+    .inner-task-container .task-description p:nth-child(2){
+        display: block;
+    }
+
+    .inner-task-container .task-description p:nth-child(1){
+        display: none;
+    }
+    
+      .outer-task-container{
+        font-size: 10px; 
+    }
+    
+    
+    .outer-task-container .open-desc{
+        /* font-family: "Poppins"; */
+        max-width: 80%;
+        max-height: 250px; 
+        padding: 5px 10px;
+    }
+    
+    .outer-task-container .close-desc{
+        max-width: 80%;
+        padding: 0px 10px;
+    }
+    
+    .inner-task-container{
+        padding: 5px 0px;
+    }
+    
+    
+    .inner-task-container .task-description img {
+        width: 10px;
+        height: 10px;
+    }
+    
+    
+    .inner-task-container .task-files img{
+        width: 13px;
+        height: 13px;
+    
+    }
+    
+    .inner-task-container .task-submit button{
+        border: none;
+        outline: none;
+        color:var(--submit-color);
+        font-weight:bold;
+        font-size: 10px;
+        cursor: pointer;
+        background-color: var(--primary-color);
+    }
+
+    .inner-task-container .task-share img{
+        width: 13px;
+        height: 13px;
+    }
+    
+  }

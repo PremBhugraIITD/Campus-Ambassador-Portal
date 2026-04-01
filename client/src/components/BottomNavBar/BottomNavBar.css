@@ -1,0 +1,35 @@
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+
+.nav-item svg {
+    fill: white;
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .bottom-nav {
+        visibility: visible;
+    }
+}
+
+@media (max-width: 480px) {
+    .bottom-nav {
+        visibility: visible;
+    }
+    .nav-item svg {
+        width: 20px;
+        height: 20px;
+    }
+}

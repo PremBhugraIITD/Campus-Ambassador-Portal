@@ -1,0 +1,30 @@
+
+.profileContact-container ul{
+    margin-top: 10%;
+    padding: 10px 20px;
+    list-style: none;
+    display: grid;
+    font-weight: bold;
+    grid-template-columns: repeat(4,1fr);
+}
+.profileContact-container ul li{
+    place-self: center;
+    margin: 0 15px;
+}
+
+@media (max-width:786px) {
+    .profileContact-container ul{
+        padding: 5px 10px;
+    }
+    .profileContact-container ul li{
+        font-size: 14px;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width:480px) {
+    
+    .profileContact-container ul li{
+        font-size: 12px;
+    }
+}

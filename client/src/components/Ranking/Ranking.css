@@ -1,0 +1,134 @@
+/* Root variables for colors */
+:root {
+    --primary-color: white;
+    --secondary-color: #171517;
+}
+
+/* Outer container */
+.outer-ranking-container {
+    padding: 0 5%;
+}
+
+.outer-ranking-container hr {
+    margin-top: 5px;
+}
+
+/* Inner container grid layout */
+.inner-ranking-container {
+    display: grid;
+    grid-template-columns: 1.5fr 3.5fr 3fr;
+    align-items: center;
+    height: 50px;
+    gap: 10px;
+}
+
+/* Positioning (rank and medal) */
+.inner-ranking-container .position {
+    width: 65%;
+    height: 65%;
+    color: var(--secondary-color);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.inner-ranking-container .position p{
+    font-size: 20px;
+}
+.inner-ranking-container .position .trophy-image{
+    width: 30px;
+}
+
+
+.inner-ranking-container .position .uplogo-img{
+    width: 15px;
+}
+
+
+
+/* Points alignment */
+.inner-ranking-container .user-points {
+    display: flex;
+    justify-content: end;
+}
+
+/* Responsive adjustments */
+
+/* Tablet view (up to 768px) */
+@media (max-width: 768px) {
+    .inner-ranking-container {
+        grid-template-columns: 1.2fr 3fr 2.8fr;
+        height: 45px;
+    }
+
+    .inner-ranking-container .position {
+        width: 60%;
+        gap: 3px;
+        font-size: 16px;
+
+    }
+
+    .inner-ranking-container .position .trophy-image{
+        width: 25px;
+    }
+    
+    
+    .inner-ranking-container .position .uplogo-img{
+        width: 12px;
+    }
+
+
+    .inner-ranking-container .user-points {
+        font-size: 14px; /* Adjusting font size for smaller screens */
+    }
+
+    .outer-ranking-container hr {
+        margin-top: 3px;
+    }
+}
+
+/* Mobile view (up to 480px) */
+@media (max-width: 480px) {
+    .outer-ranking-container {
+        padding: 0 3%;
+    }
+
+    .inner-ranking-container {
+        grid-template-columns: 1fr 2fr 2.5fr;
+        height: 40px;
+    }
+
+    .inner-ranking-container .position {
+        width: 55%;
+        gap: 3px;
+        font-size: 14px;
+
+    }
+
+    .inner-ranking-container .position .trophy-image{
+        width: 20px;
+    }
+    
+    
+    .inner-ranking-container .position .uplogo-img{
+        width: 10px;
+    }
+
+    .inner-ranking-container .user-points {
+        font-size: 12px; /* Smaller font for mobile */
+    }
+
+    .inner-ranking-container p {
+        font-size: 12px; /* Adjust font for rank and name */
+    }
+
+    img {
+        width: 30px; /* Smaller image size for rank */
+    }
+
+    .outer-ranking-container hr {
+        margin-top: 2px;
+    }
+}
+

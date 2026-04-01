@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+
+h2{
+    margin: 0;
+    padding: 0;
+}
+
+.faq-container{
+    background-color: var(--primary-color);
+    /* background-color: yellow; */
+    color:var(--secondary-color);
+    position: absolute;
+    width: 100vw;
+    height:60vh;
+    margin-top: 344vh;
+    right: 0.01vw;
+    margin-bottom:10% !important;
+    display:flex;
+    align-items: center;
+    /* padding-top: 3%;
+    padding-bottom:7%; */
+}
+
+.faq-container .title{
+    width:30%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.faq-container  h2{
+    font-family: "Sansita", sans-serif;
+    font-size: 2em;
+    transform: rotate(-90deg);
+    margin-left: -2%;
+}
+
+.faq-container .dropdown{
+    width:150%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 7.5%;
+    margin-left: -4%;
+}
+
+.faq-container-items{
+    margin:0 !important;
+    padding: 0 !important;
+    /* margin:0 !important;
+    margin-right:7% !important; */
+}
+
+@media (max-width: 768px) {
+    .faq-container{
+        height: 70vh;
+        margin: 0;
+        margin-top: 505vh;
+        flex-direction: column;
+    }
+
+    .faq-container .title{
+        width: 40%;
+        height: 20%;
+        padding-top: 3%;
+    }
+
+    .title h2{
+        margin: 0;
+        transform: rotate(0deg);
+    }
+
+    .faq-container .dropdown{
+        width: 90%;
+        height: 70%;
+        margin: 0;
+        padding: 0;
+        margin-top: 1%;
+        margin-bottom: 5%;
+    }
+
+    .faq-container .dropdown{
+        font-size: 0.8em;
+    }
+}
